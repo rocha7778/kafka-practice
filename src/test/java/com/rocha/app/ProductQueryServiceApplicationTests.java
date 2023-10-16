@@ -5,6 +5,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class ProductQueryServiceApplicationTests {
+	
+
+	
+	
 
 	@Test
 	void contextLoads() {

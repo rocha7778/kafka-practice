@@ -13,6 +13,7 @@ public class ProductQueryServiceImpl implements ProductQueryService {
 
 	@Autowired
 	private ProductRepository productRepository;
+	
 
 	@Override
 	public List<Product> getProducts() {
