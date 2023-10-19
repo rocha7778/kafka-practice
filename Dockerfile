@@ -12,6 +12,5 @@ ENTRYPOINT ["java","-jar","/usr/local/lib/demo.jar"]
 
 
 # mysql
-
 # docker create -p 3307:3306 --name mysql-product-query --network cqrs  -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=product mysql 
 # docker start mysql-product-query 
