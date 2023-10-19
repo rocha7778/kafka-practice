@@ -20,4 +20,10 @@ public class ProductQueryServiceImpl implements ProductQueryService {
 		return productRepository.getProducts();
 	}
 
+
+	@Override
+	public Product getProductById(Long id) {
+		return productRepository.findById(id);
+	}
+
 }

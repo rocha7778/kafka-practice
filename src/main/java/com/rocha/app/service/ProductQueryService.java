@@ -6,5 +6,6 @@ import com.rocha.app.entity.Product;
 
 public interface ProductQueryService {
 	public List<Product> getProducts();
+	public Product getProductById(Long id);
 
 }

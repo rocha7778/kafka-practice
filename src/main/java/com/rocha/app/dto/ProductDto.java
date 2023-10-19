@@ -15,5 +15,6 @@ public class ProductDto implements Serializable{
     private String name;
     private String description;
     private double price;
+    private Double quantity;
 
 }

@@ -52,7 +52,7 @@ public class ProductQueryServiceTest {
 
 	public List<Product> getProducts() {
 		ArrayList<Product> listProduct = new ArrayList<>();
-		Product p1 = new Product(1L, "Chair", "Beatiful", 100.0);
+		Product p1 = new Product(1L, "Chair", "Beatiful", 100.0,0);
 		listProduct.add(p1);
 		return listProduct;
 	}
