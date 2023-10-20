@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.rocha.app.dto.ProductDto;
 import com.rocha.app.entity.Product;
+import com.rocha.app.repository.ProductRepositoryJPA;
 import com.rocha.app.service.ProductQueryService;
 import com.rocha.app.util.MapperUtil;
 
@@ -20,9 +21,12 @@ public class ProductQueryController {
 	@Autowired
 	private ProductQueryService productQuery;
 	
+	@Autowired
+	private ProductRepositoryJPA productRepository;
+	
 	@GetMapping
 	public List<ProductDto> getproduct(){
-		return productQuery.getProducts().stream().map(p ->  MapperUtil.mapper(p)).toList();
+		return productRepository.findAll().stream().map(p ->  MapperUtil.mapper(p)).toList();
 	}
 	
 	@GetMapping("/{id}")
